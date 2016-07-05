@@ -4,20 +4,30 @@ Official Android SDK (beta) to support:
  - Ride Request Button
  - Ride Request Widget
  - REST APIs
+官方出品的 Android SDK (beta)，现已支持以下特性：
+ - Ride Request Button
+ - Ride Request Widget
+ - REST APIs
 
 At a minimum, this SDK is designed to work with Android SDK 14.
+当前版本的SDK对于Android系统的最低版本要求为14，即:Android 4.0及以上的系统。
 
 ## Before you begin
+## 前言
 
 Before using this SDK, register your application on the [Uber Developer Site](https://developer.uber.com/).
+在开始接入优步SDK之前，请确定已经拥有了优步开发者账号，如果没有，[点击这里](https://developer.uber.com.cn/)去注册一个优步开发者账号。
 
 ## Installation
+## 添加依赖
 
 To use the Uber Rides Android SDK, add the compile dependency with the latest version of the Uber SDK.
+为了使用优步的Android SDK，首先需要将最新版本的SDK依赖引入到项目中，当前最新的版本是：0.5.1
 
 ### Gradle
 
 Add the Uber Rides Android SDK to your `build.gradle`:
+将下面的SDK依赖添加到项目的 `build.gradle` 文件中：
 ```gradle
 dependencies {
     compile 'com.uber.sdk:rides-android:0.5.1'
