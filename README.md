@@ -47,17 +47,17 @@ In the `pom.xml` file:
 ```
 
 ## SDK Configuration
-## SDK配置
+## 开始配置 SDK
 
-In order for the SDK to function correctly, you need to add some information about your app. In your application, create a `SessionConfiguration` to use with the various components of the library. If you prefer the set it and forget it model, use the `UberSdk` class to initialize with a default `SessionConfiguration`.
-
+In order for the SDK to function correctly, you need to add some information about your app. In your application, create a `SessionConfiguration` to use with the various components of the library. If you prefer the set it and forget it model, use the `UberSdk` class to initialize with a default `SessionConfiguration`.  
+为了能够让SDK能够正常工作，需要你在你的应用中增加一些配置信息。在你的应用程序中，new一个 `SessionConfiguration` 对象来使用SDK库提供的丰富的功能和组件。如果你更喜欢通过配置文件配置，那么可以忽略这个模型，`UberSdk` 类将使用一个默认的 `SessionConfiguration` 对象来进行初始化。
 ```java
 
 SessionConfiguration config = new SessionConfiguration.Builder()
-    .setClientId("YOUR_CLIENT_ID") //This is necessary
-    .setRedirectUri("YOUR_REDIRECT_URI") //This is necessary if you'll be using implicit grant
-    .setEnvironment(Environment.SANDBOX) //Useful for testing your app in the sandbox environment
-    .setScopes(Arrays.asList(Scope.PROFILE, Scope.RIDE_WIDGETS)) //Your scopes for authentication here
+    .setClientId("YOUR_CLIENT_ID") //这是必填项
+    .setRedirectUri("YOUR_REDIRECT_URI") //如果你使用 implicit grant 模式进行OAurh认证，该项为必填项 This is necessary if you'll be using implicit grant
+    .setEnvironment(Environment.SANDBOX) //这个配置将为你提供一个测试应用程序的测试环境，测试数据为模拟数据，不会真的叫来一辆Uber车 Useful for testing your app in the sandbox environment
+    .setScopes(Arrays.asList(Scope.PROFILE, Scope.RIDE_WIDGETS)) //你的应用程序需要用到的认证域 Your scopes for authentication here
     .build();
 
 //This is a convenience method and will set the default config to be used in other components without passing it directly.
