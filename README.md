@@ -4,12 +4,14 @@ Official Android SDK (beta) to support:
  - Ride Request Button
  - Ride Request Widget
  - REST APIs
+ 
 官方出品的 Android SDK (beta)，现已支持以下特性：
  - Ride Request Button
  - Ride Request Widget
  - REST APIs
 
 At a minimum, this SDK is designed to work with Android SDK 14.
+
 当前版本的SDK对于Android系统的最低版本要求为14，即:Android 4.0及以上的系统。
 
 ## Before you begin
