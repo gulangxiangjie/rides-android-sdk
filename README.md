@@ -50,7 +50,7 @@ In the `pom.xml` file:
 ## 开始配置 SDK
 
 In order for the SDK to function correctly, you need to add some information about your app. In your application, create a `SessionConfiguration` to use with the various components of the library. If you prefer the set it and forget it model, use the `UberSdk` class to initialize with a default `SessionConfiguration`.  
-为了能够让SDK能够正常工作，需要你在你的应用中增加一些配置信息。在你的应用程序中，new一个 `SessionConfiguration` 对象来使用SDK库提供的丰富的功能和组件。如果你更喜欢通过配置文件配置，那么可以忽略这个模型，`UberSdk` 类将使用一个默认的 `SessionConfiguration` 对象来进行初始化。
+为了能够让SDK正常工作，需要你在你的应用中增加一些配置信息。在你的应用程序中，new一个 `SessionConfiguration` 对象来使用SDK库提供的丰富的功能和组件。如果你更喜欢通过配置文件配置，那么可以忽略这个模型，`UberSdk` 类将使用一个默认的 `SessionConfiguration` 对象来进行初始化。
 ```java
 
 SessionConfiguration config = new SessionConfiguration.Builder()
